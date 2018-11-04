@@ -141,8 +141,8 @@ public:
 
     auto printResult() -> void
     {
-        for (int i = 0; i < this->result.first.size(); i++)
-            cout << "Parameter " << i+1 << " : " << this->result.first[i] << endl;
+        for (int i = 0; i < result.first.size(); i++)
+            cout << "Parameter " << i+1 << " : " << result.first[i] << endl;
 
         cout << "error : " << result.second << endl;
     }
