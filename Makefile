@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -c -Wall -Wsign-compare -ggdb -std=c++14
+CFLAGS = -c -std=c++14
 LDFLAGS =
 SOURCES = Main.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
