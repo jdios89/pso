@@ -39,28 +39,28 @@ public:
          minRand              (MIR),
          maxRand              (MAR),
          errorCon             (ERC),
-         W                    (w)  ,
-         C1                   (c1) ,
-         C2                   (c2)
+         W                    (w  ),
+         C1                   (c1 ),
+         C2                   (c2 )
          {}
 
-    auto set_numberOfParticles ( int    NOP ) -> void { this->numberOfParticles  = NOP ; };
+    auto set_numberOfParticles ( int    NOP ) { this->numberOfParticles  = NOP ; };
 
-    auto set_numberOfDimension ( int    NOD ) -> void { this->numberOfDimensions = NOD ; };
+    auto set_numberOfDimension ( int    NOD ) { this->numberOfDimensions = NOD ; };
 
-    auto set_maximumOfIteration( int    MOI ) -> void { this->maximumOfIteration = MOI ; };
+    auto set_maximumOfIteration( int    MOI ) { this->maximumOfIteration = MOI ; };
 
-    auto set_minRand           ( double MIR ) -> void { this->minRand            = MIR ; };
+    auto set_minRand           ( double MIR ) { this->minRand            = MIR ; };
 
-    auto set_maxRand           ( double MAR ) -> void { this->maxRand            = MAR ; };
+    auto set_maxRand           ( double MAR ) { this->maxRand            = MAR ; };
 
-    auto set_errorCon          ( double ERC ) -> void { this->errorCon           = ERC ; };
+    auto set_errorCon          ( double ERC ) { this->errorCon           = ERC ; };
 
-    auto set_w                 ( double w   ) -> void { this->W                  = w   ; };
+    auto set_w                 ( double w   ) { this->W                  = w   ; };
 
-    auto set_c1                ( double c1  ) -> void { this->C1                 = c1  ; };
+    auto set_c1                ( double c1  ) { this->C1                 = c1  ; };
 
-    auto set_c2                ( double c2  ) -> void { this->C2                 = c2  ; };
+    auto set_c2                ( double c2  ) { this->C2                 = c2  ; };
 
     auto optimize( function<double (vector<double> )> fitFunc )
     {
